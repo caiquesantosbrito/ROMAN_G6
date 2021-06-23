@@ -1,0 +1,19 @@
+Entidades necessárias para desenvolvimento do Projeto Roman
+
+TiposUsuarios
+IdTipoUsuario
+nomeTipoUsuario - Comum/Professor
+--------------------
+Usuários
+IdUsuario
+IdTipoUsuario
+--------------------
+Professor
+IdProfessor
+nomeProfessor
+--------------------
+Temas
+IdTema
+nomeDoProjeto
+descrição
+
