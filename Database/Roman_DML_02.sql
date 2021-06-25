@@ -2,23 +2,24 @@ USE ProjetoRoman;
 GO
 
 INSERT INTO TiposUsuarios(NomeTipoUsuario)
-VALUES		('Comum'),
-			('Professor')
+VALUES		('Professor'),
+			('Comum')
 GO
 
-INSERT INTO Usuarios(IdTipoUsuario)
-VALUES		('1'),
-			('2'),
-			('2'),
-			('1')
+INSERT INTO Usuarios(IdTipoUsuario, Email, Senha)
+VALUES		(1,'professor@email.com','professor123'),
+			(2,'comum@gmail.com','comum123')
+
 GO
 
-INSERT INTO Professores(NomeProfessor)
-VALUES		('Caique'),
-			('Saulo')
+INSERT INTO Professores(IdUsuario,NomeProfessor)
+VALUES		(1,'Caique'),
+			(2,'Saulo')
 GO
 
-INSERT INTO Temas(NomeProjeto, Descriçao)
+INSERT INTO Projeto(NomeProjeto, Descricao)
 VALUES		('Gestao', 'Projeto de Controle de Estoque'),
 			('Historia em quadrinhos', 'Projeto de Listagem de Personagens')
 GO
+
+SELECT * FROM Projeto
